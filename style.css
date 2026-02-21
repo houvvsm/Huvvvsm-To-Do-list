@@ -318,8 +318,8 @@ body::before{
 
   .title-line{
     width: 110px;  
-    margin-left: 40px;
-    margin-top: -10px; 
+    margin-left: 35px;
+    margin-top: -8px; 
   }
 
   /* Form */
@@ -382,4 +382,5 @@ body::before{
   }
 
 }
+
 
