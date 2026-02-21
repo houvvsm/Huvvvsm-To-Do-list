@@ -354,6 +354,22 @@ body::before{
   .actions{
     justify-content: flex-end;
   }
+  @media (max-width: 480px){
+  .title-line{
+    margin-top: 6px !important;   
+    transform: none !important;   
+  }
+}
+body{ position: relative; }
+
+body::before{
+  z-index: 0;              
+}
+
+.app{
+  position: relative;
+  z-index: 1;              
+}
 
   /* Footer */
   .footer{
@@ -362,4 +378,5 @@ body::before{
     gap: 8px;
     text-align: center;
   }
+
 }
