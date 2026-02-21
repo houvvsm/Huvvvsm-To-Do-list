@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskFlow — To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="app">
+  <header class="header">
+  <div class="title">
+    <span class="logo-inline">
+      <svg viewBox="0 0 120 120">
+        <defs>
+          <linearGradient id="g" x1="0" x2="1">
+            <stop offset="0" stop-color="#5af3ff"/>
+            <stop offset="1" stop-color="#8b5cff"/>
+          </linearGradient>
+        </defs>
+        <g fill="none" stroke="url(#g)" stroke-width="8"
+           transform="translate(12,12) scale(0.8)">
+          <path d="M10 10 L10 90 L30 90 L30 54 L60 90 L90 54 L90 90 L110 90 L110 10"/>
+        </g>
+      </svg>
+    </span>
+
+    <span class="product-name">TaskFlow</span>
+  </div>
+
+  <span class="title-line"></span>
+
+  <p>Simple. Clean. Done.</p>
+</header>
+
+
+    <section class="controls">
+      <form id="taskForm" class="task-form" autocomplete="off">
+        <input id="taskInput" type="text" placeholder="Add a task..." maxlength="80" />
+        <button id="addBtn" type="submit">Add</button>
+      </form>
+
+      <div class="filters" role="tablist" aria-label="Task filters">
+        <button class="filter-btn active" data-filter="all" type="button">All</button>
+        <button class="filter-btn" data-filter="todo" type="button">Todo</button>
+        <button class="filter-btn" data-filter="done" type="button">Done</button>
+      </div>
+    </section>
+
+    <section class="list">
+      <ul id="taskList" class="task-list"></ul>
+      <p id="emptyState" class="empty">No tasks yet. Add your first one 👀</p>
+    </section>
+
+    <footer class="footer">
+      <span id="counter">0 tasks</span>
+      <button id="clearDoneBtn" type="button" class="ghost">Clear done</button>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
